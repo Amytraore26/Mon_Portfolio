@@ -84,263 +84,79 @@
                 </div>
             </div>
         </div>
-        
         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
     </section>
 
-    <!-- Features Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-sm font-semibold tracking-wider uppercase text-blue-600">Features</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Everything You Need to Succeed</h2>
-                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
-                    Our platform is packed with powerful features designed to help you build, grow, and scale your business.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="h-48 bg-gradient-to-r from-purple-500 to-indigo-600 flex items-center justify-center">
-                        <i class="fas fa-bolt text-white text-6xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Lightning Fast</h3>
-                        <p class="text-gray-600 mb-4">
-                            Optimized for performance with instant load times and smooth animations that delight your users.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
-                            Learn more <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="h-48 bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center">
-                        <i class="fas fa-paint-brush text-white text-6xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Beautiful Design</h3>
-                        <p class="text-gray-600 mb-4">
-                            Stunning templates and customization options to make your project stand out from the crowd.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
-                            Learn more <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="h-48 bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center">
-                        <i class="fas fa-shield-alt text-white text-6xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Secure & Reliable</h3>
-                        <p class="text-gray-600 mb-4">
-                            Enterprise-grade security and 99.9% uptime guarantee to keep your business running smoothly.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
-                            Learn more <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="font font-Poppins bg-gray-100 min-h-screen">
+  <div class="flex flex-col items-center relative pt-20 overflow-hidden">
+    <!-- Animated Background Text -->
+    <h1 class="absolute text-6xl md:text-[10rem] font-bold text-black-100 opacity-1 animate-pulse">
+      ABOUT ME
+    </h1>
+    
+    <div class="relative flex flex-col items-center mt-5 md:mt-10 group">
+      <!-- Main Heading with Gradient Text -->
+      <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 mb-2 transition-all duration-500 group-hover:scale-105">
+        Know Me More
+      </h1>
+      
+      <!-- Animated Border -->
+      <div class="relative">
+        <div class="w-20 md:w-32 h-1 bg-gray-600 rounded-full overflow-hidden">
+          <div class="h-full bg-orange-600 animate-progress-bar origin-left"></div>
         </div>
-    </section>
+        <div class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
+      </div>
+      
+      <!-- Subtle decorative elements -->
+     
+    </div>
+    
+    <!-- Optional subtitle -->
+    <p class="mt-6 text-gray-400 text-center max-w-md md:max-w-2xl px-4 text-sm md:text-base animate-fade-in">
+      Let me introduce myself and share my journey, skills, and passions with you      Let me introduce myself and share my journey, skills, and passions with you
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <!-- Stat 1 -->
-                <div class="p-6">
-                    <div class="text-5xl font-bold mb-2">10K+</div>
-                    <div class="text-indigo-200 font-medium">Happy Customers</div>
-                </div>
-                
-                <!-- Stat 2 -->
-                <div class="p-6">
-                    <div class="text-5xl font-bold mb-2">99.9%</div>
-                    <div class="text-indigo-200 font-medium">Uptime</div>
-                </div>
-                
-                <!-- Stat 3 -->
-                <div class="p-6">
-                    <div class="text-5xl font-bold mb-2">5M+</div>
-                    <div class="text-indigo-200 font-medium">Daily Requests</div>
-                </div>
-                
-                <!-- Stat 4 -->
-                <div class="p-6">
-                    <div class="text-5xl font-bold mb-2">24/7</div>
-                    <div class="text-indigo-200 font-medium">Support</div>
-                </div>
-            </div>
-        </div>
-    </section>
+            Let me introduce myself and share my journey, skills, and passions with you
 
-    <!-- Testimonials -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-sm font-semibold tracking-wider uppercase text-blue-600">Testimonials</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Customers Say</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500 transform hover:scale-105 transition-all">
-                    <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
-                            <p class="text-blue-600">CEO, TechStart</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "This platform transformed our business. The ease of use combined with powerful features is unmatched in the industry."
-                    </p>
-                    <div class="mt-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500 transform hover:scale-105 transition-all">
-                    <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Michael Chen</h4>
-                            <p class="text-purple-600">Marketing Director</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "The customer support is exceptional. They helped us migrate our entire infrastructure with zero downtime."
-                    </p>
-                    <div class="mt-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500 transform hover:scale-105 transition-all">
-                    <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>
-                            <p class="text-pink-600">Product Manager</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "We've seen a 300% increase in conversions since implementing their solution. Simply game-changing!"
-                    </p>
-                    <div class="mt-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
-            <p class="max-w-2xl mx-auto text-blue-100 mb-8 text-xl">
-                Join thousands of satisfied customers who are already building the future with our platform.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
-                    Start Free Trial
-                </button>
-                <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:bg-opacity-10 transition-all">
-                    Schedule Demo
-                </button>
-            </div>
-        </div>
-    </section>
+    </p>
+  </div>
+</div>
+
+    <section class="py-12 bg-gray-100">
+
+    <!-- LANGAGES -->
+    <h2 class="text-3xl font-bold text-center mb-6">Langages</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
+      <div v-for="lang in languages" :key="lang.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+        <img :src="lang.icon" :alt="lang.name" class="w-12 h-12 mb-2">
+        <span class="text-gray-700 font-semibold">{{ lang.name }}</span>
+      </div>
+    </div>
+
+    <!-- FRAMEWORKS / LIBRARIES -->
+    <h2 class="text-3xl font-bold text-center mb-6">Frameworks / Libraries</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
+      <div v-for="fw in frameworks" :key="fw.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+        <img :src="fw.icon" :alt="fw.name" class="w-12 h-12 mb-2">
+        <span class="text-gray-700 font-semibold">{{ fw.name }}</span>
+      </div>
+    </div>
+
+    <!-- OUTILS / SYSTEMES -->
+    <h2 class="text-3xl font-bold text-center mb-6">Outils & Systèmes</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+      <div v-for="tool in tools" :key="tool.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+        <img :src="tool.icon" :alt="tool.name" class="w-12 h-12 mb-2">
+        <span class="text-gray-700 font-semibold">{{ tool.name }}</span>
+      </div>
+    </div>
+
+  </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Column 1 -->
-                <div>
-                    <h3 class="text-white text-lg font-semibold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 2 -->
-                <div>
-                    <h3 class="text-white text-lg font-semibold mb-4">Product</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Integrations</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div>
-                    <h3 class="text-white text-lg font-semibold mb-4">Resources</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">API Reference</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Webinars</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div>
-                    <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p class="text-sm">
-                        Subscribe to our newsletter for the latest updates
-                    </p>
-                    <div class="mt-3 flex">
-                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <a href="#" class="text-white text-2xl font-bold flex items-center">
@@ -353,8 +169,51 @@
             </div>
         </div>
     </footer>
+
 </body>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      // LANGAGES
+      languages: [
+        { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+        { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+        { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' }
+      ],
+
+      // FRAMEWORKS / LIBRARIES
+      frameworks: [
+        { name: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
+        { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+        { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg' },
+        { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' }
+      ],
+
+      // OUTILS / SYSTEMES
+      tools: [
+        { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg' },
+        { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+        { name: 'Trello', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg' },
+        { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+        { name: 'Photoshop', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg' },
+        { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+        { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+        { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' }
+      ]
+    }
+  }
+}
+</script>
+<style scoped>
+/* Tu peux ajouter des animations ou ajustements ici si besoin */
+</style>
+
 <!-- <script>
     const toggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
