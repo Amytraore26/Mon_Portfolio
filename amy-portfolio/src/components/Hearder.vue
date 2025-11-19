@@ -125,7 +125,6 @@
 
     <section class="py-12 bg-gray-100">
 
-    <!-- LANGAGES -->
     <h2 class="text-3xl font-bold text-center mb-6">Langages</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
       <div v-for="lang in languages" :key="lang.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
@@ -134,7 +133,6 @@
       </div>
     </div>
 
-    <!-- FRAMEWORKS / LIBRARIES -->
     <h2 class="text-3xl font-bold text-center mb-6">Frameworks / Libraries</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
       <div v-for="fw in frameworks" :key="fw.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
@@ -143,7 +141,6 @@
       </div>
     </div>
 
-    <!-- OUTILS / SYSTEMES -->
     <h2 class="text-3xl font-bold text-center mb-6">Outils & Systèmes</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
       <div v-for="tool in tools" :key="tool.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
@@ -177,7 +174,6 @@
 export default {
   data() {
     return {
-      // LANGAGES
       languages: [
         { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
         { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
@@ -185,7 +181,6 @@ export default {
         { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' }
       ],
 
-      // FRAMEWORKS / LIBRARIES
       frameworks: [
         { name: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
         { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -195,7 +190,6 @@ export default {
         { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' }
       ],
 
-      // OUTILS / SYSTEMES
       tools: [
         { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg' },
         { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
@@ -210,10 +204,6 @@ export default {
   }
 }
 </script>
-<style scoped>
-/* Tu peux ajouter des animations ou ajustements ici si besoin */
-</style>
-
 <!-- <script>
     const toggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
