@@ -111,53 +111,54 @@
     </div>
   </section>
 
+<section class="bg-black text-white py-5">
+  <h1 class="text-6xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">Compétences</h1>
 
-
-    <section class=" bg-black text-white py-12">
-      <h1 class="text-4xl font-bold text-center"> Compétences</h1>
-    <h2 class="text-3xl font-bold text-center mb-6">Langages</h2>
-    <div class="bg-black text-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-      <div v-for="lang in languages" :key="lang.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
-        <img :src="lang.icon" :alt="lang.name" class="w-12 h-12 mb-2">
-        <span class="text-gray-700 font-semibold">{{ lang.name }}</span>
-      </div>
+  <h2 class="text-3xl font-bold text-center pt-20 mb-6">Langages</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12 pt-5">
+    <div v-for="lang in languages" :key="lang.name" 
+         class="flex flex-col items-center p-4 bg-gray-900 text-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-4xl">
+      <img :src="lang.icon" :alt="lang.name" class="w-12 h-12 mb-2">
+      <span class="font-semibold">{{ lang.name }}</span>
     </div>
+  </div>
 
-    <h2 class="text-3xl font-bold text-center mb-6">Frameworks / Libraries  / Base de Donees</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-      <div v-for="fw in frameworks" :key="fw.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
-        <img :src="fw.icon" :alt="fw.name" class="w-12 h-12 mb-2">
-        <span class="text-gray-700 font-semibold">{{ fw.name }}</span>
-      </div>
+  <h2 class="text-3xl font-bold text-center  mb-6">Frameworks / Libraries / Base de Données</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12 pt-5">
+    <div v-for="fw in frameworks" :key="fw.name" 
+         class="flex flex-col items-center p-4 bg-gray-900 text-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+      <img :src="fw.icon" :alt="fw.name" class="w-12 h-12 mb-2">
+      <span class="font-semibold">{{ fw.name }}</span>
     </div>
+  </div>
 
-    <h2 class="text-3xl font-bold text-center mb-6">Outils & Systèmes</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-      <div v-for="tool in tools" :key="tool.name" class="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
-        <img :src="tool.icon" :alt="tool.name" class="w-12 h-12 mb-2">
-        <span class="text-gray-700 font-semibold">{{ tool.name }}</span>
-      </div>
+  <h2 class="text-3xl font-bold text-center mb-6">Outils & Systèmes</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto pt-5">
+    <div v-for="tool in tools" :key="tool.name" 
+         class="flex flex-col items-center p-4 bg-gray-900 text-white rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+      <img :src="tool.icon" :alt="tool.name" class="w-12 h-12 mb-2">
+      <span class="font-semibold">{{ tool.name }}</span>
     </div>
-
-  </section>
+  </div>
+</section>
 
   <section id="work" class="py-20 px-8">
     <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-12 text-black">Projets<span class="text-white"></span></h2>
+      <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">Projets<span class=""></span></h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1 -->
         <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
           <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-neon/20 transition-all h-full">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            <img src="../../assets/free.jpeg" 
                  alt="Project 1" 
                  class="w-full h-48 object-cover">
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">AI Dashboard</h3>
-              <p class="opacity-80 mb-4">Next.js + Tailwind + TensorFlow</p>
+              <h3 class="text-xl font-bold mb-2">FreeAds</h3>
+              <p class="opacity-80 mb-4">Laravel + Tailwind + MySQL</p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">React</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">AI</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-glass rounded-full text-sm">Laravel</span>
+                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
+                <span class="px-3 py-1 bg-glass rounded-full text-sm">MySQL</span>
               </div>
               <a href="#" class="text-red hover:underline">View Project →</a>
             </div>
@@ -167,7 +168,7 @@
         <!-- Project 2 -->
         <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
           <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-cyber/20 transition-all h-full">
-            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            <img src="../../assets/1754919239625.jpeg" 
                  alt="Project 2" 
                  class="w-full h-48 object-cover">
             <div class="p-6">
@@ -186,7 +187,7 @@
         <!-- Project 3 -->
         <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
           <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            <img src="../../assets/dash.png" 
                  alt="Project 3" 
                  class="w-full h-48 object-cover">
             <div class="p-6">
@@ -230,7 +231,6 @@
 
 </body>
 </template>
-
 <script>
 export default {
   data() {
