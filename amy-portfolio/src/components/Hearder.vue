@@ -122,20 +122,21 @@
                     am
                     <br class="block sm:hidden" />Aminata TRAORE
                 </h2>
-                <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
-                    Amet minim mollit non deserunt
-                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
+                <p class="max-w-lg mt-3 text-xl leading-relaxed text-white dark:text-gray-300 md:mt-8">
+                    Passionnée par la création digitale et l'univers du web.
+J'aime construire et donner vie à des projets qui allient simplicité et utilité. Motivée et déterminée.
+
+Mon objectif est de créer des plateformes modernes, fluides et centrées sur l'utilisateur, tout en continuant à évoluer et perfectionner ma manière de penser et de concevoir le web.
                 </p>
 
-                <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 md:mt-8">
+                <!-- <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 md:mt-8">
                     <span class="relative inline-block">
                         <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300 dark:bg-gray-900"></span>
-                    <span class="relative"> Have a question? </span>
+                    <span class="relative"> Des question ? </span>
                     </span>
-                    <br class="block sm:hidden" />Ask me on <a href="#" title=""
-                        class="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-500 hover:underline">Twitter</a>
-                </p>
+                    <br class="block sm:hidden" />ecrivez mon <a href="#" title=""
+                        class="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-500 hover:underline">Linkldin</a>
+                </p> -->
             </div>
 
             <div class="relative">
@@ -147,6 +148,96 @@
         </div>
     </div>
 </section>
+
+<div>
+    <section class="container mx-auto px-4 py-16 md:py-24">
+        <h2 class="text-4xl md:text-5xl font-bold text-center dark:text-white mb-20 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">Formation</h2>
+        <!-- <p class="text-lg text-center text-white dark:text-gray-300 mb-12 max-w-2xl mx-auto">A scroll-through story of key moments that shaped my development career. Watch the cards animate into view as you explore.</p> -->
+
+        <div class="relative">
+            <!-- Central Vertical Line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 dark:bg-blue-900/50"></div>
+
+            <!-- Timeline Items Container -->
+            <div class="space-y-12 md:space-y-24">
+                <!-- Item 1 -->
+                <div class="timeline-item flex flex-col md:flex-row items-center">
+                    <!-- Left Side Content (Desktop) -->
+                    <div class="hidden md:block md:w-1/2 pr-12"></div>
+
+                    <!-- Icon on Central Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 text-white border-4 border-white dark:border-gray-900 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Card -->
+                    <div class="ml-0 md:ml-12 md:w-1/2">
+                        <div class="timeline-card bg-gray-900 dark:bg-gray-800 rounded-2xl shadow-lg p-6 border-l-4 border-blue-500 transform transition-all duration-500 hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Juin - Décembre 2025</p>
+                            <h3 class="text-xl font-bold text-white dark:text-white mt-2">Développement fullstack</h3>
+                            <p class="text-white dark:text-white mt-4">We.Code</p>
+                            <!-- <div class="mt-4">
+                                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Code screenshot" class="rounded-lg shadow-md">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Alternates on Desktop) -->
+                <div class="timeline-item flex flex-col md:flex-row items-center">
+                    <!-- Left Side Card -->
+                    <div class="md:w-1/2 md:pr-12">
+                        <div class="timeline-card bg-gray-900 dark:bg-gray-800 rounded-2xl shadow-lg p-6 border-l-4 border-green-500 transform transition-all duration-500 hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-green-600 dark:text-green-400">2023 - À présent</p>
+                            <h3 class="text-xl font-bold text-white dark:text-white mt-2">Licence développement d'application et e-service</h3>
+                            <p class="text-white dark:text-white mt-4">Université Virtuelle de Côte d'Ivoire</p>
+                            <!-- <div class="mt-4 bg-gray-100 dark:bg-gray-700 p-3 rounded-lg">
+                                <pre class="text-xs text-gray-800 dark:text-gray-200"><code>function MyComponent() { return &lt;h1&gt;Wow!&lt;/h1&gt;; }</code></pre>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Icon on Central Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white border-4 border-white dark:border-gray-900 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Empty Spacer (Right Side for Desktop) -->
+                    <div class="hidden md:block md:w-1/2"></div>
+                </div>
+
+                <!-- Item 3 (Add more items following the alternating pattern) -->
+                <div class="timeline-item flex flex-col md:flex-row items-center">
+                    <div class="hidden md:block md:w-1/2 pr-12"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500 text-white border-4 border-white dark:border-gray-900 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-0 md:ml-12 md:w-1/2">
+                        <div class="timeline-card bg-gray-900 dark:bg-gray-800 rounded-2xl shadow-lg p-6 border-l-4 border-purple-500 transform transition-all duration-500 hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-purple-600 dark:text-purple-400">2022 - 2023</p>
+                            <h3 class="text-xl font-bold text-white dark:text-white mt-2">Baccalauréat D</h3>
+                            <p class="text-white dark:text-white mt-4">Lycée Moderne de Port Bouet</p>
+                            <!-- <button class="mt-4 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 text-sm font-medium px-4 py-2 rounded-lg hover:bg-purple-200 dark:hover:bg-purple-900/50 transition-colors">View Project →</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <section class="bg-black text-white mt-64 py-5">
   <h1 class="text-5xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">Compétences</h1>
