@@ -463,7 +463,7 @@ Mon objectif est de créer des plateformes modernes, fluides et centrées sur l'
           </svg>
         </a> -->
       </div>
-      <p class="text-gray-500 text-sm">© 2025 Aminata TRAORE. All rights reserved.</p>
+      <p class="text-white text-sm">© 2025 Aminata TRAORE. All rights reserved.</p>
     </div>
   </footer>
 
