@@ -8,12 +8,12 @@
       <div class="grid items-center grid-cols-1 md:grid-cols-2 gap-8">
 
         <div>
-          <h2 class="text-1xl sm:text-2xl lg:text-3xl font-bold leading-tight text-white">
+          <h2 class="mt-9 text-1xl sm:text-2xl lg:text-3xl font-bold leading-tight text-white">
             Développeuse Full-Stack
             <br class="block sm:hidden" />
           </h2>
 
-          <p class="max-w-lg mt-30 sm:mt-9 text-base sm:text-xl leading-relaxed text-white">
+          <p class="max-w-lg mt-6 sm:mt-9 text-base sm:text-xl leading-relaxed text-white">
  Passionnée par la création d'applications web modernes, performantes et intuitives.
 Je conçois des interfaces fluides et des systèmes complets (front + back) capables de répondre aux besoins réels des utilisateurs.
 Curieuse, dynamique et capable de travailler sous pression, j'aime apprendre, comprendre et bâtir des solutions qui simplifient la vie.          </p>
