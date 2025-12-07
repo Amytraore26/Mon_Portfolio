@@ -6,7 +6,7 @@
         <div class="mb-8">
           <h1 class="text-5xl sm:text-6xl md:text-8xl font-black mb-6 parallax-element">
             <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">
-              Hey 👋 I am Aminata TRAORE
+              Hey 👋 I am Joelliane Aminata TRAORE
             </span>
           </h1>
           <div class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 parallax-element" data-speed="0.5">
