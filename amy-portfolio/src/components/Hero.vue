@@ -17,7 +17,7 @@
         </div>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center parallax-element" data-speed="0.3">
-          <a href="/CV_Aminata_TRAORE.pdf" download
+          <a href="CV_Aminata_TRAORE.pdf" download
              class="magnetic-button neon-border px-8 py-4 rounded-full text-lg font-semibold">
             Télécharger mon CV
           </a>
