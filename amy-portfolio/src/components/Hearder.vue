@@ -471,6 +471,8 @@ Mon objectif est de créer des plateformes modernes, fluides et centrées sur l'
 </template>
 <script>
 export default {
+  name: "StepperForm",
+
   data() {
     return {
       languages: [
@@ -498,6 +500,7 @@ export default {
         { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
         { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' }
       ]
+      
     };
   },
   mounted() {

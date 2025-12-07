@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root { --primary: #667eea }
+body { font-family: 'Inter', sans-serif }
+
+
+/* small helpers from your design */
+.glass-morphism { background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06) }
+.neon-border { position: relative; }
