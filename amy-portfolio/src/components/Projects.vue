@@ -2,7 +2,7 @@
 <template>
   <section id="projects" class="py-20 px-8">
     <div class="container mx-auto">
-      <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-12">
+      <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">
         Projets
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
