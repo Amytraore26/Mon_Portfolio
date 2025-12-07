@@ -1,7 +1,7 @@
 <template>
-  <div id="contact" class="min-h-screen bg-black text-white p-4 flex flex-col items-center pb-8">
+  <div id="contact" class="min-h- bg-black text-white p-4 flex flex-col items-center pb-8">
     <div class="w-full max-w-6xl mt-8">
-      <h1 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text mb-10">
+      <h1 class="text-4xl sm:text-5xl md:text-5xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow md-20 mb-10">
         Contactez-moi
       </h1>
 
