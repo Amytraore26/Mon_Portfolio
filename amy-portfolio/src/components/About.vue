@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="pt-1 overflow-hidden black dark:bg-black md:pt-0 sm:pt-16 2xl:pt-16">
+  <section id="about" class="pt-1 overflow-hidden bg-black md:pt-0 sm:pt-16 2xl:pt-16">
     <h1 class="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">
       À Propos de moi
     </h1>
@@ -8,15 +8,15 @@
       <div class="grid items-center grid-cols-1 md:grid-cols-2 gap-8">
 
         <div>
-          <h2 class="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-white dark:text-white">
+          <h2 class="text-1xl sm:text-2xl lg:text-3xl font-bold leading-tight text-white">
+            Développeuse Full-Stack
             <br class="block sm:hidden" />
           </h2>
 
-          <p class="max-w-lg mt-30 sm:mt-9 text-base sm:text-xl leading-relaxed text-white dark:text-gray-300">
-            Passionnée par la création digitale et l'univers du web. J'aime construire et donner vie à des projets qui allient simplicité et utilité. Motivée et déterminée.
-
-            Mon objectif est de créer des plateformes modernes, fluides et centrées sur l'utilisateur, tout en continuant à évoluer et perfectionner ma manière de penser et de concevoir le web.
-          </p>
+          <p class="max-w-lg mt-30 sm:mt-9 text-base sm:text-xl leading-relaxed text-white">
+ Passionnée par la création d'applications web modernes, performantes et intuitives.
+Je conçois des interfaces fluides et des systèmes complets (front + back) capables de répondre aux besoins réels des utilisateurs.
+Curieuse, dynamique et capable de travailler sous pression, j'aime apprendre, comprendre et bâtir des solutions qui simplifient la vie.          </p>
         </div>
 
         <div class="relative">
