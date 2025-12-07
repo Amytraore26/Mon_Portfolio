@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="hero-3d min-h-[100vh] md:min-h-[80vh] flex items-center justify-center relative overflow-hidden">
+  <section id="home" class="hero-3d min-h-[95vh] md:min-h-[80vh] flex items-center justify-center relative overflow-hidden">
     <div class="absolute inset-0" id="hero3d"></div>
     <div class="max-w-7xl mx-auto px-9 relative z-10">
       <div class="text-center">
