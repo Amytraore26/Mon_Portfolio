@@ -1,17 +1,11 @@
 <template>
-<div class="bg-black text-white min-h-screen">
-<Navbar />
-<Hero />
-<About />
-<Skills :languages="languages" :frameworks="frameworks" :tools="tools" />
-<Timeline />
-<Projects />
-<Contact />
-<FooterComp />
-</div>
-
-  <RouterView />
+  <div class="bg-black text-white min-h-screen">
+    <Navbar />
+    <RouterView />
+    <FooterComp />
+  </div>
 </template>
+
 <script>
 import Navbar from '@/components/Navbar.vue'
 import Hero from '@/components/Hero.vue'

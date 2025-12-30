@@ -1,4 +1,3 @@
-<!-- src/components/Projects.vue -->
 <template>
   <section id="projects" class="py-20 px-8">
     <div class="container mx-auto">
@@ -6,159 +5,15 @@
         Projets
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- FreeAds -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-neon/20 transition-all h-full">
-            <img src="../../assets/free.jpeg" alt="FreeAds" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">FreeAds</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière simple et intuitive</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Laravel</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">MySQL</span>
-              </div>
-              <a href="#" class="text-red hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Integration Web -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-cyber/20 transition-all h-full">
-            <img src="../../assets/1754919239625.jpeg" alt="Integration Web" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Integration Web</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">HTML</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">CSS</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">JavaScript</span>
-              </div>
-              <a href="#" class="text-cyber hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dashboard -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/dash.png" alt="Dashboard" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Dashboard</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">React.js</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">API</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Flask</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Show-Time -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/show.jpeg" alt="Show-Time" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Show-Time</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Nest.js</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">MongoDB</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rotten-Tomatoes -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/rott.jpeg" alt="Rotten-Tomatoes" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Rotten-Tomatoes</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Next.js</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">API</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Post-It -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/post.png" alt="Post-It" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Post-It</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Vue.js</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">API</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Yowl -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/yowl.png" alt="Yowl" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Yowl</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Laravel</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">MySQL</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Twp -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/twp.png" alt="Twp" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Twp</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Vue.js</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">WordPress</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Trello -->
-        <div class="bg-gray-900 tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-            <img src="../../assets/post.png" alt="Trello" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Trello</h3>
-              <p class="opacity-80 mb-4">est une plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">React Native</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">Tailwind</span>
-                <span class="px-3 py-1 bg-glass rounded-full text-sm">API trello</span>
-              </div>
-              <a href="#" class="text-matrix hover:underline">Détails →</a>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+  v-for="project in projects"
+  :key="project.id"
+  :project-id="project.id"
+  :title="project.name"
+  :image="project.image"
+  :description="project.description"
+  :tags="project.techs.join(', ')"
+/>
 
       </div>
     </div>
@@ -166,11 +21,37 @@
 </template>
 
 <script>
+import ProjectCard from './ProjectCard.vue'
+
+import freeAdsImg from '../../assets/free.jpeg'
+import integrationImg from '../../assets/1754919239625.jpeg'
+import dashboardImg from '../../assets/dash.png'
+import showtimeImg from '../../assets/show.jpeg'
+import rottenImg from '../../assets/rott.jpeg'
+import postItImg from '../../assets/post.png'
+import yowlImg from '../../assets/yowl.png'
+import twpImg from '../../assets/twp.png'
+import redditImg from '../../assets/post.png'
+
 export default {
   name: "Projects",
-};
+  components: {
+    ProjectCard
+  },
+  data() {
+    return {
+      projects: [
+        { id: 1, name: "FREEADS", image: freeAdsImg, techs: ["Laravel","Tailwind","MySQL"], description: "Plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière simple et intuitive." },
+        { id: 2, name: "INTEGRATION WEB", image: integrationImg, techs: ["HTML","CSS","JavaScript"], description: "Reproduction d'une maquette de site e-commerce en version responsive." },
+        { id: 3, name: "DASHBOARD", image: dashboardImg, techs: ["React.js","API","Flask"], description: "Dashboard web interactif affichant plusieurs micro-services sous forme de widgets." },
+        { id: 4, name: "SHOW-TIME", image: showtimeImg, techs: ["Nest.js","Tailwind","MongoDB"], description: "Site de réservation de tickets en ligne pour concerts et événements." },
+        { id: 5, name: "ROTTEN-TOMATOES", image: rottenImg, techs: ["Next.js","Tailwind","API"], description: "Site web de films pour parcourir, filtrer et trier les films par genre, date ou popularité." },
+        { id: 6, name: "POST-IT", image: postItImg, techs: ["Vue.js","Tailwind","API"], description: "Application de gestion et de rappel de notes pour organiser facilement ses rappels." },
+        { id: 7, name: "YOWL", image: yowlImg, techs: ["Laravel","Tailwind","MySQL"], description: "Application web pour partager des liens externes avec suivi des KPI et commentaires." },
+        { id: 8, name: "TWP", image: twpImg, techs: ["Vue.js","Tailwind","WordPress"], description: "Application web de gestion de tâches inspirée de Trello." },
+        { id: 9, name: "REDDITECH", image: redditImg, techs: ["React Native","Tailwind","API trello"], description: "Application mobile de gestion de tâches intégrant l'API Trello." }
+      ]
+    }
+  }
+}
 </script>
-
-<style scoped>
-/* Optionnel si tu veux ajouter du style local */
-</style>

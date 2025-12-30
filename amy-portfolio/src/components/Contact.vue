@@ -121,25 +121,53 @@ export default {
       },
     };
   },
-  methods: {
-    sendEmail() {
-      const templateParams = {
-        from_name: this.form.name,
-        from_email: this.form.email,
-        phone: this.form.phone,
-        message: this.form.message,
-      };
-
-      emailjs.send('service_38knslv', 'template_gh8m972', templateParams, 'MCDNanu_vhZFoeaSk')
-        .then(() => {
-          alert('Message envoyé avec succès !');
-          this.step = 1;
-          this.form = { name: "", email: "", phone: "", message: "" };
-        }, (error) => {
-          console.error(error);
-          alert('Erreur lors de l\'envoi.');
-        });
+ methods: {
+  validateStep() {
+    if (this.step === 2 && !this.form.email) {
+      alert("Veuillez entrer votre email.");
+      return false;
     }
+    if (this.step === 3 && !this.form.phone) {
+      alert("Veuillez entrer votre numéro de téléphone.");
+      return false;
+    }
+    if (this.step === 4 && !this.form.message) {
+      alert("Veuillez entrer votre message.");
+      return false;
+    }
+    return true;
+  },
+
+  nextStep() {
+    if (this.validateStep()) {
+      this.step++;
+    }
+  },
+
+  sendEmail() {
+    if (!this.form.email || !this.form.phone || !this.form.message) {
+      alert("Veuillez remplir les champs a compter de l'email.");
+      return;
+    }
+
+    const templateParams = {
+      from_name: this.form.name || "Non spécifié",
+      from_email: this.form.email,
+      phone: this.form.phone,
+      message: this.form.message,
+    };
+
+    emailjs.send('service_38knslv', 'template_gh8m972', templateParams, 'MCDNanu_vhZFoeaSk')
+      .then(() => {
+        alert('Message envoyé avec succès !');
+        this.step = 1;
+        this.form = { name: "", email: "", phone: "", message: "" };
+      }, (error) => {
+        console.error(error);
+        alert('Erreur lors de l\'envoi.');
+      });
   }
+}
+
 }
 </script>

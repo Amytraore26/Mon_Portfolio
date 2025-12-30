@@ -9,6 +9,7 @@
         <a href="#home" class="nav-link">Accueil</a>
         <a href="#about" class="nav-link">À Propos</a>
         <a href="#skills" class="nav-link">Compétences</a>
+        <a href="#formations" class="nav-link">Formations</a>
         <a href="#projects" class="nav-link">Projets</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -28,6 +29,7 @@
         <a href="#home" class="nav-link" @click="isOpen = false">Accueil</a>
         <a href="#about" class="nav-link" @click="isOpen = false">À Propos</a>
         <a href="#skills" class="nav-link" @click="isOpen = false">Compétences</a>
+        <a href="#formations" class="nav-link" @click="isOpen = false">Formations</a>
         <a href="#projects" class="nav-link" @click="isOpen = false">Projets</a>
         <a href="#contact" class="nav-link" @click="isOpen = false">Contact</a>
       </div>

@@ -1,10 +1,10 @@
 <template>
   <section class="container mx-auto px-4 py-16 md:py-24">
     <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold text-center dark:text-white mb-12 sm:mb-20 text-center bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">
-      Formation
+      Formations
     </h2>
 
-    <div class="relative">
+    <div id="formations"   class="relative">
       <!-- Central Vertical Line -->
 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] md:w-1 bg-blue-200 dark:bg-blue-900/50"></div>
 
