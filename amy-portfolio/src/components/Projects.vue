@@ -31,7 +31,7 @@ import rottenImg from '../../assets/rott.jpeg'
 import postItImg from '../../assets/post.png'
 import yowlImg from '../../assets/yowl.png'
 import twpImg from '../../assets/twp.png'
-import redditImg from '../../assets/post.png'
+import yobaloImg from '../../assets/yobalo.jpeg'
 
 export default {
   name: "Projects",
@@ -49,7 +49,7 @@ export default {
         { id: 6, name: "POST-IT", image: postItImg, techs: ["Vue.js","Tailwind","API"], description: "Application de gestion et de rappel de notes pour organiser facilement ses rappels." },
         { id: 7, name: "YOWL", image: yowlImg, techs: ["Laravel","Tailwind","MySQL"], description: "Application web pour partager des liens externes avec suivi des KPI et commentaires." },
         { id: 8, name: "TWP", image: twpImg, techs: ["Vue.js","Tailwind","WordPress"], description: "Application web de gestion de tâches inspirée de Trello." },
-        { id: 9, name: "REDDITECH", image: redditImg, techs: ["React Native","Tailwind","API trello"], description: "Application mobile de gestion de tâches intégrant l'API Trello." }
+        { id: 9, name: "YOBALO", image: yobaloImg, techs: ["WordPress"], description: "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre." },
       ]
     }
   }

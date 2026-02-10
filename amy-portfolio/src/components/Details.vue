@@ -29,7 +29,7 @@
                 target="_blank"
                 class="block text-center w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
               >
-                GitHub
+                Liens du projet
               </a>
             </div>
           </div>
@@ -106,7 +106,7 @@ import rottenImg from '../../assets/rott.jpeg'
 import postItImg from '../../assets/post.png'
 import yowlImg from '../../assets/yowl.png'
 import twpImg from '../../assets/twp.png'
-import redditImg from '../../assets/post.png'
+import yobaloImg from '../../assets/yobalo.jpeg'
 
 export default {
   props: ['id'],
@@ -134,9 +134,9 @@ export default {
           description:
             'Reproduction fidèle d’une maquette Figma en site web responsive.',
           category: 'Frontend',
-          status: 'Completed',
+          status: 'Completed, Liens du projet: OK', 
           technologies: ['HTML', 'CSS', 'JavaScript'],
-          github: '#'
+          github: 'https://lnkd.in/gctXKW49'
         },
         {
           id: '3',
@@ -182,9 +182,9 @@ export default {
           description:
             'Application de notes avec création et suppression.',
           category: 'Productivité',
-          status: 'Completed',
+          status: 'Completed, Liens du projet: OK', 
           technologies: ['Vue.js', 'API'],
-          github: '#'
+          github: 'https://postit-ange.vercel.app/'
         },
         {
           id: '7',
@@ -212,15 +212,17 @@ export default {
         },
         {
           id: '9',
-          title: 'Redditech',
-          image: redditImg,
-          shortDescription: 'App mobile de tâches.',
+          title: 'Yobalo',
+          image: yobaloImg,
+          shortDescription: 'App web de livraison de proximité.',
           description:
-            'Application mobile connectée à l’API Trello.',
-          category: 'Mobile App',
-          status: 'Completed',
-          technologies: ['React Native'],
-          github: '#'
+            "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre. L'objectif est de faciliter des livraisons rapides, locales et accessibles, tout en favorisant l'économie de quartier.",
+          category: 'Web App',
+          status: 'Completed, Liens du projet: OK', 
+          technologies: ['WORDPRESS'],
+          github: 'https://yobalo.com/'
+
+         
         }
       ]
 
