@@ -27,7 +27,16 @@
 <div class="font-semibold">{{ tool.name }}</div>
 </div>
 </div>
+
+<h3 class="text-2xl font-semibold mt-10 mb-6">CMS</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+  <div v-for="cmsItem in cms" :key="cmsItem.name" class="p-4 bg-gray-900 rounded-xl text-center">
+<img :src="cmsItem.icon" :alt="cmsItem.name" class="w-12 h-12 mx-auto mb-2" />
+<div class="font-semibold">{{ cmsItem.name }}</div>
 </div>
+</div>
+</div>
+
 </section>
 </template>
 
@@ -35,6 +44,6 @@
 <script>
 export default {
 name: 'Skills',
-props: ['languages', 'frameworks', 'tools']
+props: ['languages', 'frameworks', 'tools', 'cms']
 }
 </script>

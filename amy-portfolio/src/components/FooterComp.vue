@@ -21,7 +21,7 @@
           </svg>
         </a> -->
       </div>
-      <p class="text-gray-500 text-sm">© 2025 Aminata TRAORE. All rights reserved.</p>
+      <p class="text-gray-500 text-sm"> © 2026 Aminata Traoré. Tous droits réservés.</p>
     </div>
   </footer>
 </template>
