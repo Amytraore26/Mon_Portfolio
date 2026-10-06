@@ -13,7 +13,8 @@
   :image="project.image"
   :description="project.description"
   :tags="project.techs.join(', ')"
-/>
+  :contribution="project.contribution"
+  />
 
       </div>
     </div>
@@ -34,6 +35,7 @@ import twpImg from '../../assets/twp.png'
 import yobaloImg from '../../assets/yobalo.jpeg'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Projects",
   components: {
     ProjectCard
@@ -41,15 +43,16 @@ export default {
   data() {
     return {
       projects: [
-        { id: 1, name: "FREEADS", image: freeAdsImg, techs: ["Laravel","Tailwind","MySQL"], description: "Plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière simple et intuitive." },
+        { id: 1, name: "FREEADS", image: freeAdsImg, techs: ["Laravel","Tailwind css","MySQL"], description: "Plateforme permettant aux utilisateurs de publier, gérer et consulter des annonces de manière simple et intuitive.", contribution: "Conception et développement du dashboard, de l’interface aux fonctionnalités. Mise en place de la gestion des annonces permettant de publier des annonces depuis le dashboard et de les afficher sur la page d’accueil. Chaque utilisateur dispose d’un dashboard personnalisé pour gérer ses propres annonces."},
         { id: 2, name: "INTEGRATION WEB", image: integrationImg, techs: ["HTML","CSS","JavaScript"], description: "Reproduction d'une maquette de site e-commerce en version responsive." },
-        { id: 3, name: "DASHBOARD", image: dashboardImg, techs: ["React.js","API","Flask"], description: "Dashboard web interactif affichant plusieurs micro-services sous forme de widgets." },
-        { id: 4, name: "SHOW-TIME", image: showtimeImg, techs: ["Nest.js","Tailwind","MongoDB"], description: "Site de réservation de tickets en ligne pour concerts et événements." },
-        { id: 5, name: "ROTTEN-TOMATOES", image: rottenImg, techs: ["Next.js","Tailwind","API"], description: "Site web de films pour parcourir, filtrer et trier les films par genre, date ou popularité." },
-        { id: 6, name: "POST-IT", image: postItImg, techs: ["Vue.js","Tailwind","API"], description: "Application de gestion et de rappel de notes pour organiser facilement ses rappels." },
-        { id: 7, name: "YOWL", image: yowlImg, techs: ["Laravel","Tailwind","MySQL"], description: "Application web pour partager des liens externes avec suivi des KPI et commentaires." },
-        { id: 8, name: "TWP", image: twpImg, techs: ["Vue.js","Tailwind","WordPress"], description: "Application web de gestion de tâches inspirée de Trello." },
-        { id: 9, name: "YOBALO", image: yobaloImg, techs: ["WordPress"], description: "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre." },
+        { id: 3, name: "YOBALO", image: yobaloImg, techs: ["WordPress"], description: "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre." },
+        { id: 4, name: "SHOW-TIME", image: showtimeImg, techs: ["Nest.js","Tailwind css","MongoDB"], description: "Site de réservation de tickets en ligne pour concerts et événements." },
+        { id: 5, name: "ROTTEN-TOMATOES", image: rottenImg, techs: ["Next.js","Tailwind css","API"], description: "Site web de films pour parcourir, filtrer et trier les films par genre, date ou popularité." },
+        { id: 6, name: "POST-IT", image: postItImg, techs: ["Vue.js","Tailwind css","API"], description: "Application de gestion et de rappel de notes pour organiser facilement ses rappels." },
+        { id: 7, name: "YOWL", image: yowlImg, techs: ["Laravel","Tailwind css","MySQL"], description: "Application web pour partager des liens externes avec suivi des KPI et commentaires." },
+        { id: 8, name: "TWP", image: twpImg, techs: ["Vue.js","Tailwind css","WordPress"], description: "Application web de gestion de tâches inspirée de Trello." },
+        { id: 9, name: "DASHBOARD", image: dashboardImg, techs: ["React.js","API REST","Flask"], description: "Dashboard web interactif affichant plusieurs micro-services sous forme de widgets." },
+
       ]
     }
   }

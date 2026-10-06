@@ -6,7 +6,7 @@
         <div class="mb-8">
           <h1 class="text-5xl sm:text-6xl md:text-8xl font-black mb-6 parallax-element">
             <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-glow">
-                 Joelliane Aminata Traoré
+                Aminata Traoré
             </span>
           </h1>
           <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 mb-6">
@@ -19,18 +19,17 @@
           </div>
         </div>
         
-        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center parallax-element" data-speed="0.3">
+        <!-- <div class="flex flex-col sm:flex-row gap-6 justify-center items-center parallax-element" data-speed="0.3">
           <a href="CV_JOELLIANE_ANGE_AMINATA_TRAORÉ.pdf" download
              class="magnetic-button glass-morphism px-8 py-4 rounded-full text-lg font-semibold">
             Télécharger mon CV
-          </a>
+          </a> -->
           <a href="#contact"
              class="magnetic-button glass-morphism px-8 py-4 rounded-full text-lg font-semibold">
             Contactez-moi
           </a>
         </div>
       </div>
-    </div>
   </section>
 </template>
 

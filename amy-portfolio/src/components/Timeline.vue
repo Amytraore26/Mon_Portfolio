@@ -38,7 +38,7 @@
         <div class="timeline-item flex flex-col md:flex-row items-center md:justify-between relative">
           <div class="md:w-1/2 md:pr-12 w-full order-2 md:order-1">
             <div class="timeline-card bg-gray-900 dark:bg-gray-800 rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-green-500 transform transition-all duration-500 hover:scale-[1.02]">
-              <p class="text-xs sm:text-sm font-semibold text-green-600 dark:text-green-400">2023 - À présent</p>
+              <p class="text-xs sm:text-sm font-semibold text-green-600 dark:text-green-400">2023 - 2026</p>
               <h3 class="text-lg sm:text-xl font-bold text-white dark:text-white mt-2">Licence développement d'application et e-service</h3>
               <p class="text-sm sm:text-base text-white dark:text-white mt-2 sm:mt-4">Université Virtuelle de Côte d'Ivoire</p>
             </div>

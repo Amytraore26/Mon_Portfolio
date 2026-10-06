@@ -9,18 +9,17 @@
 
         <div>
          <h2 class="mt-9 text-xl sm:text-2xl lg:text-3xl font-bold leading-tight text-white">
-Développeuse Web Fullstack
-</h2>
+Développeuse Full Stack</h2>
 
          <p class="max-w-lg mt-6 sm:mt-9 text-base sm:text-xl leading-relaxed text-white">
-Je suis développeuse web fullstack passionnée par la création d’applications modernes, performantes et intuitives.
+Titulaire d’une Licence en Informatique – Développement d’Applications, je suis développeuse web Full Stack avec un intérêt particulier pour la création d’applications web.
 
-Je conçois des interfaces frontend fluides ainsi que des systèmes backend robustes capables de répondre à des besoins réels.
+Au cours de ma formation, de mes projets et de mes expériences, j’ai eu l’occasion de travailler sur le développement d’interfaces web, la mise en place de fonctionnalités côté serveur, la gestion de bases de données et l’intégration d’API.
 
-Curieuse et motivée, j’aime apprendre en continu et transformer des idées en solutions concrètes.
+J’aime apprendre, expérimenter à travers des projets concrets et améliorer progressivement mes compétences afin de proposer des solutions simples et adaptées aux besoins.
 </p>
 <div class="mt-6 text-sm text-gray-300">
-Laravel • Vue.js • React • MySQL • API REST
+Laravel • Vue.js • React • MySQL • API REST • Git
 </div>
         </div>
 

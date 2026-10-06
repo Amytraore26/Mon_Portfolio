@@ -23,7 +23,9 @@ export default {
   title: String,
   image: String,
   tags: String,
-  description: { type: String, default: 'Description du projet.' }
+  description: { type: String, default: 'Description du projet.' },
+  contribution: String,
+  
 },
 
   computed: {

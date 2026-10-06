@@ -41,60 +41,86 @@
             {{ project.title }}
           </h2>
 
-          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+          <p class="text-gray-600 dark:text-gray-300 text-1xl mb-4">
             {{ project.shortDescription }}
           </p>
 
-          <div class="flex mb-4 gap-6">
-            <div>
-              <span class="font-bold text-gray-700 dark:text-gray-300">Category:</span>
-              <span class="text-gray-600 dark:text-gray-300 ml-1">
-                {{ project.category }}
-              </span>
-            </div>
-            <div>
-              <span class="font-bold text-gray-700 dark:text-gray-300">Status:</span>
-              <span class="text-gray-600 dark:text-gray-300 ml-1">
-                {{ project.status }}
-              </span>
-            </div>
-          </div>
+         <!-- CATEGORY / STATUS -->
+<!-- <div class="flex flex-wrap gap-6 mb-6">
+  <div>
+    <span class="font-bold text-gray-700 dark:text-gray-300">
+      Category :
+    </span>
 
-          <!-- TECHNOLOGIES -->
-          <div class="mb-4">
-            <span class="font-bold text-gray-700 dark:text-gray-300">
-              Technologies:
-            </span>
-            <div class="flex flex-wrap mt-2 gap-2">
-              <span
-                v-for="tech in project.technologies"
-                :key="tech"
-                class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-1 px-3 rounded-full text-sm font-bold"
-              >
-                {{ tech }}
-              </span>
-            </div>
-          </div>
+    <span class="text-gray-600 dark:text-gray-300 ml-2">
+      {{ project.category }}
+    </span>
+  </div>
 
-          <!-- DESCRIPTION -->
-          <div>
-            <span class="font-bold text-gray-700 dark:text-gray-300">
-              Project Description:
-            </span>
-            <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
-              {{ project.description }}
-            </p>
-          </div>
+  <div>
+    <span class="font-bold text-gray-700 dark:text-gray-300">
+      Status :
+    </span>
 
-        </div>
+    <span class="text-gray-600 dark:text-gray-300 ml-2">
+      {{ project.status }}
+    </span>
+  </div>
+</div> -->
+
+
+<!-- TECHNOLOGIES -->
+<div class="mb-6">
+  <span class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+    Technologies :
+  </span>
+
+  <div class="flex flex-wrap mt-3 gap-2">
+    <span
+      v-for="tech in project.technologies"
+      :key="tech"
+      class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-1.5 px-3 rounded-full text-sm font-medium"
+    >
+      {{ tech }}
+    </span>
+  </div>
+  
+</div>
+
+<!-- DESCRIPTION -->
+<div>
+  <span class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+    Description du projet :
+  </span>
+
+  <p class="text-gray-600 dark:text-gray-300 text-1xl mt-2 leading-7">
+    {{ project.description }}
+  </p>
+</div>
+<!-- MA CONTRIBUTION -->
+<div v-if="project.contribution" class="mb-8">
+  <p class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+    Ma contribution :
+  </p>
+
+  <p class="text-gray-600 dark:text-gray-300 text-1xl leading-7">
+    {{ project.contribution }}
+  </p>
+</div>
+
       </div>
     </div>
   </div>
 
   <!-- SI ID INVALIDE -->
-  <div v-else class="text-center text-white py-32">
-    Projet introuvable
-  </div>
+<div v-if="project" class="bg-gray-100 dark:bg-gray-800 py-64">
+   ...
+</div>
+
+<div v-else class="text-center text-white py-32">
+  Projet introuvable
+</div>
+</div>
 </template>
 
 <script>
@@ -121,9 +147,10 @@ export default {
           shortDescription: 'Plateforme de publication d’annonces.',
           description:
             'Application web complète permettant aux utilisateurs de publier, rechercher et gérer des annonces.',
-          category: 'Web App',
-          status: 'Completed',
-          technologies: ['Vue.js', 'Laravel', 'API REST'],
+          // category: 'Web App',
+          // status: 'Completed',
+          technologies: ['Laravel','Tailwind css','CRUD','MySQL'],
+          contribution: "Conception et développement du dashboard, de l’interface aux fonctionnalités. Mise en place de la gestion des annonces permettant de publier des annonces depuis le dashboard et de les afficher sur la page d’accueil. Chaque utilisateur dispose d’un dashboard personnalisé pour gérer ses propres annonces",
           github: '#'
         },
         {
@@ -133,23 +160,29 @@ export default {
           shortDescription: 'Intégration de maquette responsive.',
           description:
             'Reproduction fidèle d’une maquette Figma en site web responsive.',
-          category: 'Frontend',
+          contribution: "Intégration des cards et mise en place de leur responsive design pour assurer un affichage adapté aux différentes tailles d’écran.",
+            category: 'Frontend',
           status: 'Completed, Liens du projet: OK', 
           technologies: ['HTML', 'CSS', 'JavaScript'],
-          github: 'https://lnkd.in/gctXKW49'
+          github: 'https://e-commerce-amy-sidoine.netlify.app/'
         },
         {
           id: '3',
-          title: 'Admin Dashboard',
-          image: dashboardImg,
-          shortDescription: 'Dashboard de gestion.',
+          title: 'Yobalo',
+          image: yobaloImg,
+          shortDescription: 'App web de livraison de proximité.',
           description:
-            'Interface administrateur avec CRUD complet.',
-          category: 'Dashboard',
-          status: 'Completed',
-          technologies: ['Vue.js', 'CRUD'],
-          github: '#'
+            "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre. L'objectif est de faciliter des livraisons rapides, locales et accessibles, tout en favorisant l'économie de quartier.",
+          contribution:
+              'Conception et intégration de la page « Livreur », avec mise en place d’une interface claire, moderne et responsive.',
+            category: 'Web App',
+          status: 'Completed, Liens du projet: OK', 
+          technologies: ['WORDPRESS'],
+          github: 'https://yobalo.com/'
+
+         
         },
+        
         {
           id: '4',
           title: 'ShowTime',
@@ -157,9 +190,11 @@ export default {
           shortDescription: 'Réservation de tickets.',
           description:
             'Plateforme de réservation pour concerts et événements.',
+            ontribution:
+  'Conception et développement du dashboard permettant d’ajouter et de gérer les événements affichés sur la page d’accueil.',
           category: 'Web App',
           status: 'Completed',
-          technologies: ['Nest.js', 'MongoDB'],
+          technologies: ['Nest.js', 'Tailwind css' ,'MongoDB'],
           github: '#'
         },
         {
@@ -169,9 +204,11 @@ export default {
           shortDescription: 'Catalogue de films.',
           description:
             'Application web basée sur une API de films.',
+            contribution:
+            'Conception et développement de l’ensemble de l’interface utilisateur du projet, avec intégration des données provenant de l’API.',
           category: 'Web App',
           status: 'Completed',
-          technologies: ['Next.js', 'API'],
+          technologies: ['Next.js', 'Tailwind css','API'],
           github: '#'
         },
         {
@@ -181,9 +218,11 @@ export default {
           shortDescription: 'Gestion de notes.',
           description:
             'Application de notes avec création et suppression.',
+            contribution:
+  'Conception et développement de l’interface utilisateur ainsi que mise en place du CRUD des notes.',
           category: 'Productivité',
           status: 'Completed, Liens du projet: OK', 
-          technologies: ['Vue.js', 'API'],
+          technologies: ['Vue.js', 'Tailwind css' ,'API REST'],
           github: 'https://postit-ange.vercel.app/'
         },
         {
@@ -192,10 +231,12 @@ export default {
           image: yowlImg,
           shortDescription: 'Partage de liens.',
           description:
-            'Partage de liens avec aperçu et KPI.',
-          category: 'Web App',
+            'Plateforme permettant de partager des liens externes et d’afficher automatiquement les informations associées, telles que le titre, la description, les images ou les vidéos et KPI.',
+          contribution:
+  'Participation à l’élaboration du cahier des charges et conception de la maquette sur Figma. Développement de l’ensemble de l’interface utilisateur, hors dashboard, ainsi que mise en place du système de commentaires permettant à chaque utilisateur de gérer ses propres commentaires.',
+            category: 'Web App',
           status: 'Completed',
-          technologies: ['Laravel', 'MySQL'],
+          technologies: ['Laravel', 'Tailwind css' ,'MySQL'],
           github: '#'
         },
         {
@@ -204,26 +245,29 @@ export default {
           image: twpImg,
           shortDescription: 'Gestion de tâches.',
           description:
-            'Application inspirée de Trello.',
-          category: 'Productivité',
+            'Application de gestion de tâches inspirée de Trello, permettant d’organiser les tâches au sein de différentes listes.',
+          contribution:
+  'Conception et développement de l’interface utilisateur ainsi que mise en place du CRUD des cartes de tâches au sein des différentes listes.',
+            category: 'Productivité',
           status: 'Completed',
-          technologies: ['Vue.js'],
+          technologies: ['Vue.js', 'Tailwind css', 'Wordpress'],
           github: '#'
         },
         {
           id: '9',
-          title: 'Yobalo',
-          image: yobaloImg,
-          shortDescription: 'App web de livraison de proximité.',
+          title: 'Admin Dashboard',
+          image: dashboardImg,
+          shortDescription: 'Dashboard de gestion.',
           description:
-            "Yobalo est une plateforme de livraison de proximité qui met en relation les habitants d'un même quartier avec des livreurs situés à moins d'un kilomètre. L'objectif est de faciliter des livraisons rapides, locales et accessibles, tout en favorisant l'économie de quartier.",
-          category: 'Web App',
-          status: 'Completed, Liens du projet: OK', 
-          technologies: ['WORDPRESS'],
-          github: 'https://yobalo.com/'
-
-         
+            'Dashboard intégrant différents services externes, notamment la météo, l’actualité et des contenus YouTube, à travers des API',
+          contribution:
+  'Conception et développement de l’ensemble de l’interface utilisateur et intégration du microservice météo à partir d’une API externe.',
+            category: 'Dashboard',
+          status: 'Completed',
+          technologies: ['Vue.js','Tailwind css', 'API REST', 'Flask'],
+          github: '#'
         }
+        
       ]
 
       return projects.find(p => p.id === this.id)
