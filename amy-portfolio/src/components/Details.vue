@@ -1,11 +1,12 @@
 <template>
-  <div v-if="project" class="bg-gray-100 dark:bg-gray-800 py-64">
+  <div v-if="project" class="bg-gray-100 dark:bg-gray-800 min-h-screen pt-36 pb-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row -mx-4">
+      
+      <div class="flex flex-col md:flex-row gap-8">
 
         <!-- IMAGE -->
-        <div class="md:flex-1 px-4">
-          <div class="h-[520px] rounded-lg bg-gray-200 dark:bg-gray-700 mb-4">
+        <div class="md:flex-1">
+          <div class="h-[420px] rounded-lg bg-gray-200 dark:bg-gray-700 mb-4 overflow-hidden">
             <img
               class="w-full h-full object-contain rounded-lg"
               :src="project.image"
@@ -13,114 +14,92 @@
             />
           </div>
 
-          <div class="flex -mx-2 mb-4">
-            <div class="w-1/2 px-2">
-              <button
-                @click="$router.back()"
-                class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
-              >
-                ← Retour
-              </button>
-            </div>
+          <!-- BOUTONS -->
+          <div class="flex justify-center gap-4 mb-6">
+  <button
+    @click="$router.back()"
+    :class="[
+      'bg-gray-900 dark:bg-gray-600 text-white py-2 px-6 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700',
+      project.github && project.github !== '#' ? 'w-1/2' : 'w-full'
+    ]"
+  >
+    ← Retour
+  </button>
 
-            <div class="w-1/2 px-2">
-              <a
-                :href="project.github"
-                target="_blank"
-                class="block text-center w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
-              >
-                Liens du projet
-              </a>
-            </div>
-          </div>
+  <a
+    v-if="project.github && project.github !== '#'"
+    :href="project.github"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="w-1/2 text-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+  >
+    Lien du projet
+  </a>
+</div>
         </div>
 
         <!-- DETAILS -->
-        <div class="md:flex-1 px-4">
+        <div class="md:flex-1">
+
           <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">
             {{ project.title }}
           </h2>
 
-          <p class="text-gray-600 dark:text-gray-300 text-1xl mb-4">
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
             {{ project.shortDescription }}
           </p>
 
-         <!-- CATEGORY / STATUS -->
-<!-- <div class="flex flex-wrap gap-6 mb-6">
-  <div>
-    <span class="font-bold text-gray-700 dark:text-gray-300">
-      Category :
-    </span>
+          <!-- TECHNOLOGIES -->
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">
+              Technologies :
+            </h3>
 
-    <span class="text-gray-600 dark:text-gray-300 ml-2">
-      {{ project.category }}
-    </span>
-  </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tech in project.technologies"
+                :key="tech"
+                class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-1.5 px-3 rounded-full text-sm font-medium"
+              >
+                {{ tech }}
+              </span>
+            </div>
+          </div>
 
-  <div>
-    <span class="font-bold text-gray-700 dark:text-gray-300">
-      Status :
-    </span>
+          <!-- DESCRIPTION -->
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+              Description du projet :
+            </h3>
 
-    <span class="text-gray-600 dark:text-gray-300 ml-2">
-      {{ project.status }}
-    </span>
-  </div>
-</div> -->
+            <p class="text-gray-600 dark:text-gray-300 leading-7">
+              {{ project.description }}
+            </p>
+          </div>
 
+          <!-- CONTRIBUTION -->
+          <div v-if="project.contribution">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+              Ma contribution :
+            </h3>
 
-<!-- TECHNOLOGIES -->
-<div class="mb-6">
-  <span class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-    Technologies :
-  </span>
+            <p class="text-gray-600 dark:text-gray-300 leading-7">
+              {{ project.contribution }}
+            </p>
+          </div>
 
-  <div class="flex flex-wrap mt-3 gap-2">
-    <span
-      v-for="tech in project.technologies"
-      :key="tech"
-      class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-1.5 px-3 rounded-full text-sm font-medium"
-    >
-      {{ tech }}
-    </span>
-  </div>
-  
-</div>
-
-<!-- DESCRIPTION -->
-<div>
-  <span class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-    Description du projet :
-  </span>
-
-  <p class="text-gray-600 dark:text-gray-300 text-1xl mt-2 leading-7">
-    {{ project.description }}
-  </p>
-</div>
-<!-- MA CONTRIBUTION -->
-<div v-if="project.contribution" class="mb-8">
-  <p class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-    Ma contribution :
-  </p>
-
-  <p class="text-gray-600 dark:text-gray-300 text-1xl leading-7">
-    {{ project.contribution }}
-  </p>
-</div>
-
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- SI ID INVALIDE -->
-<div v-if="project" class="bg-gray-100 dark:bg-gray-800 py-64">
-   ...
-</div>
-
-<div v-else class="text-center text-white py-32">
-  Projet introuvable
-</div>
-</div>
+  <!-- PROJET INTROUVABLE -->
+  <div
+    v-else
+    class="text-center text-white py-32"
+  >
+    Projet introuvable
+  </div>
 </template>
 
 <script>
@@ -155,17 +134,19 @@ export default {
         },
         {
           id: '2',
-          title: 'Web Integration',
-          image: integrationImg,
-          shortDescription: 'Intégration de maquette responsive.',
+          title: 'Yowl',
+          image: yowlImg,
+          shortDescription: 'Partage de liens.',
           description:
-            'Reproduction fidèle d’une maquette Figma en site web responsive.',
-          contribution: "Intégration des cards et mise en place de leur responsive design pour assurer un affichage adapté aux différentes tailles d’écran.",
-            category: 'Frontend',
-          status: 'Completed, Liens du projet: OK', 
-          technologies: ['HTML', 'CSS', 'JavaScript'],
-          github: 'https://e-commerce-amy-sidoine.netlify.app/'
+            'Plateforme permettant de partager des liens externes et d’afficher automatiquement les informations associées, telles que le titre, la description, les images ou les vidéos et KPI.',
+          contribution:
+  'Participation à l’élaboration du cahier des charges et conception de la maquette sur Figma. Développement de l’ensemble de l’interface utilisateur, hors dashboard, ainsi que mise en place du système de commentaires permettant à chaque utilisateur de gérer ses propres commentaires.',
+            category: 'Web App',
+          status: 'Completed',
+          technologies: ['Laravel', 'Tailwind css' ,'MySQL'],
+          github: '#'
         },
+       
         {
           id: '3',
           title: 'Yobalo',
@@ -182,37 +163,8 @@ export default {
 
          
         },
-        
         {
           id: '4',
-          title: 'ShowTime',
-          image: showtimeImg,
-          shortDescription: 'Réservation de tickets.',
-          description:
-            'Plateforme de réservation pour concerts et événements.',
-            ontribution:
-  'Conception et développement du dashboard permettant d’ajouter et de gérer les événements affichés sur la page d’accueil.',
-          category: 'Web App',
-          status: 'Completed',
-          technologies: ['Nest.js', 'Tailwind css' ,'MongoDB'],
-          github: '#'
-        },
-        {
-          id: '5',
-          title: 'Rotten Tomatoes Clone',
-          image: rottenImg,
-          shortDescription: 'Catalogue de films.',
-          description:
-            'Application web basée sur une API de films.',
-            contribution:
-            'Conception et développement de l’ensemble de l’interface utilisateur du projet, avec intégration des données provenant de l’API.',
-          category: 'Web App',
-          status: 'Completed',
-          technologies: ['Next.js', 'Tailwind css','API'],
-          github: '#'
-        },
-        {
-          id: '6',
           title: 'Post-It',
           image: postItImg,
           shortDescription: 'Gestion de notes.',
@@ -226,21 +178,21 @@ export default {
           github: 'https://postit-ange.vercel.app/'
         },
         {
-          id: '7',
-          title: 'Yowl',
-          image: yowlImg,
-          shortDescription: 'Partage de liens.',
+          id: '5',
+          title: 'Admin Dashboard',
+          image: dashboardImg,
+          shortDescription: 'Dashboard de gestion.',
           description:
-            'Plateforme permettant de partager des liens externes et d’afficher automatiquement les informations associées, telles que le titre, la description, les images ou les vidéos et KPI.',
+            'Dashboard intégrant différents services externes, notamment la météo, l’actualité et des contenus YouTube, à travers des API',
           contribution:
-  'Participation à l’élaboration du cahier des charges et conception de la maquette sur Figma. Développement de l’ensemble de l’interface utilisateur, hors dashboard, ainsi que mise en place du système de commentaires permettant à chaque utilisateur de gérer ses propres commentaires.',
-            category: 'Web App',
+  'Conception et développement de l’ensemble de l’interface utilisateur et intégration du microservice météo à partir d’une API externe.',
+            category: 'Dashboard',
           status: 'Completed',
-          technologies: ['Laravel', 'Tailwind css' ,'MySQL'],
+          technologies: ['Vue.js','Tailwind css', 'API REST', 'Flask'],
           github: '#'
         },
         {
-          id: '8',
+          id: '6',
           title: 'TWP',
           image: twpImg,
           shortDescription: 'Gestion de tâches.',
@@ -253,21 +205,48 @@ export default {
           technologies: ['Vue.js', 'Tailwind css', 'Wordpress'],
           github: '#'
         },
+         {
+          id: '7',
+          title: 'Web Integration',
+          image: integrationImg,
+          shortDescription: 'Intégration de maquette responsive.',
+          description:
+            'Reproduction fidèle d’une maquette Figma en site web responsive.',
+          contribution: "Intégration des cards et mise en place de leur responsive design pour assurer un affichage adapté aux différentes tailles d’écran.",
+            category: 'Frontend',
+          status: 'Completed, Liens du projet: OK', 
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          github: 'https://e-commerce-amy-sidoine.netlify.app/'
+        },
+        {
+          id: '8',
+          title: 'Rotten Tomatoes Clone',
+          image: rottenImg,
+          shortDescription: 'Catalogue de films.',
+          description:
+            'Application web basée sur une API de films.',
+            contribution:
+            'Conception et développement de l’ensemble de l’interface utilisateur du projet, avec intégration des données provenant de l’API.',
+          category: 'Web App',
+          status: 'Completed',
+          technologies: ['Next.js', 'Tailwind css','API'],
+          github: '#'
+        },
+        
         {
           id: '9',
-          title: 'Admin Dashboard',
-          image: dashboardImg,
-          shortDescription: 'Dashboard de gestion.',
+          title: 'ShowTime',
+          image: showtimeImg,
+          shortDescription: 'Réservation de tickets.',
           description:
-            'Dashboard intégrant différents services externes, notamment la météo, l’actualité et des contenus YouTube, à travers des API',
-          contribution:
-  'Conception et développement de l’ensemble de l’interface utilisateur et intégration du microservice météo à partir d’une API externe.',
-            category: 'Dashboard',
+            'Plateforme de réservation pour concerts et événements.',
+            contribution:
+  'Conception et développement du dashboard permettant d’ajouter et de gérer les événements affichés sur la page d’accueil.',
+          category: 'Web App',
           status: 'Completed',
-          technologies: ['Vue.js','Tailwind css', 'API REST', 'Flask'],
+          technologies: ['Nest.js', 'Tailwind css' ,'MongoDB'],
           github: '#'
-        }
-        
+        },
       ]
 
       return projects.find(p => p.id === this.id)
